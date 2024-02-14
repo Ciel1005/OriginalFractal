@@ -6,7 +6,7 @@ public void setup(){
 
 public void draw(){
 
-  if((Math.random()+100) < 50){
+  if(Math.random()< .5){
   fill((int)(Math.random()*100)+150, 0, 0);
   background(0);
   }else{
@@ -14,11 +14,11 @@ public void draw(){
   background((int)(Math.random()*100)+150, 0, 0);
   }
   myFractal(500, 500, 500, true);
-  for(int i = 150; i <= 851; i+=700){
-     for(int j = 150; j <= 851; i+=700){
-  myFractal(i, j, 50, true);
-     }
-  }
+  myFractal(150, 150, 100, true);
+  myFractal(850, 150, 100, true);
+  myFractal(850, 850, 100, true);
+  myFractal(150, 850, 100, true);
+  
 }
 
 public void myFractal(int x, int y, int siz, boolean shap){
