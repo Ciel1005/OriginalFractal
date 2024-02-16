@@ -14,7 +14,7 @@ public void draw() {
    fill(0);
   background(0);
   }
-  myFractal(500, 500, 250, true);
+  myFractal(500, 500, 100, true);
   myFractal(250, 250, 50, true);
   myFractal(750, 250, 50, true);
   myFractal(750, 750, 50, true);
